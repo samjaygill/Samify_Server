@@ -36,11 +36,15 @@ public class DataLoader implements ApplicationRunner {
     public void run(ApplicationArguments args) {
 
 
-        Artist eminem = new Artist("Eminem", "Marshall Mathers", "https://d3ne5nhbe3knix.cloudfront.net/s3/ttf-media/images/event/P-Eminem.jpg", 51, "17/10/1972", "Detroit", "Bio of Eminem");
-        Artist fiftyCent = new Artist("50 Cent", "Curtis James Jackson III", "https://i1.sndcdn.com/artworks-bByamaZT0aBqkdUU-fc8Apw-t500x500.jpg", 48, "06/07/1975", "New York", "Bio of 50 cent");
-        Artist chrisBrown = new Artist("Chris Brown", "Christopher Maurice Brown", "https://geo-media.beatsource.com/image_size/500x500/d/2/b/d2bca908-5ee3-4e0a-a369-7a805ee07baf.jpg", 34, "05/05/1989", "Virginia", "Bio of Chris Brown");
+        Artist eminem = new Artist("Eminem", "Marshall Mathers", "https://i.ibb.co/kyNgCDs/eminem-removebg-preview.png", 51, "17/10/1972", "Detroit", "Bio of Eminem");
+        Artist fiftyCent = new Artist("50 Cent", "Curtis James Jackson III", "https://i.ibb.co/6rg2y9t/50cent-removebg-preview.png", 48, "06/07/1975", "New York", "Bio of 50 cent");
+        Artist chrisBrown = new Artist("Chris Brown", "Christopher Maurice Brown", "https://i.ibb.co/zF8Jwy8/cb-removebg-preview.png", 34, "05/05/1989", "Virginia", "Bio of Chris Brown");
+        Artist beyonce = new Artist("Beyoncé", "Beyoncé Giselle Knowles-Carter", "https://i.ibb.co/ZYz4CKR/bey-removebg-preview.png", 42, "04/09/1981", "Houston", "Bio of Beyonce");
+        Artist rihanna = new Artist("Rihanna", "Robyn Rihanna Fenty", "https://i.ibb.co/JBVkNsY/rih-removebg-preview.png", 36, "20/02/1988", "Barbados", "Bio of Rihanna");
+        Artist vybz = new Artist("Vybz Kartel", "Adidja Azim Palmer", "https://i.ibb.co/L0HsnHZ/vk-removebg-preview.png", 48, "07/01/1976", "Jamaica", "Bio of Vybz Kartel");
+        Artist dre = new Artist("Dr. Dre", "Andre Romell Young", "https://i.ibb.co/1Gw86Lk/dre-removebg-preview.png", 59, "18/02/1965", "Compton", "Bio of Dr. Dre");
 
-        artistRepository.saveAll(Arrays.asList(eminem, fiftyCent, chrisBrown));
+        artistRepository.saveAll(Arrays.asList(eminem, fiftyCent, chrisBrown, beyonce, rihanna, vybz, dre));
 
 
         Album mmlp = new Album("The Marshall Mathers LP", "https://i1.sndcdn.com/artworks-46d4a422-15df-4966-a771-33fdbca3922f-0-t500x500.jpg", "23/05/2000", "Hip-Hop", 5);
